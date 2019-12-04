@@ -14,6 +14,16 @@ a {
 .fr {
 	float: right;
 }
+@font-face {
+    font-family: "iconfont";
+    /*src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+        url('iconfont.woff2') format('woff2'),
+        url('iconfont.woff') format('woff'),
+        url('iconfont.ttf') format('truetype'),
+        url('iconfont.svg#iconfont') format('svg'); 临时忽略兼容*/
+        src:url('font/iconfont.ttf') format('truetype');
+}
 
 body {
 	background: rgba(0, 0, 0, 0.1)
@@ -28,7 +38,7 @@ body {
 	overflow: hidden; 	/*隐藏直角撑破圆角*/
 }
 .title {
-	//height: 50px;
+	/* //height: 50px; */
 	line-height: 50px;
 	background-color: #6385d1;
 	color: white;
@@ -48,7 +58,7 @@ body {
     font-weight: bold;
 	margin-right: 10px;
 }
-.register-item span{
+.register-item span {
 	color: red; 
 	margin-top: 10px;
 }
@@ -72,6 +82,8 @@ body {
 	box-shadow: 1px 1px 10px #6385d1;
 }
 .reminder {
+    font-size: 22px;
+    font-family: "iconfont";
 	margin-top: 10px;
 	max-width: 250px;
 	word-break: break-all;

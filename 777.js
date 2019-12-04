@@ -1,5 +1,5 @@
 //假装是服务器获得的数据
-const used = ['马化腾', '雷军', '刘强东' ,'joker', 'Kevin', 'Durant', 'Leonardo', '那撸多'];
+const used = ['马化腾', '雷军', '刘强东' ,'j&#xe614;er', 'Kevin', 'Durant', 'Leonardo', '那撸多'];
 (function event_bind () {
 	let userAccount = document.querySelector("#Account"),
 	userPass = document.querySelector("#password"), 
@@ -46,7 +46,7 @@ const used = ['马化腾', '雷军', '刘强东' ,'joker', 'Kevin', 'Durant', 'L
 		let reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,24}$/;
 		//var reg = /^\w{6,30}$/;
 		if (reg.test(this.value)) {
-			success_tip(reminder, mark_color, "OK", 0x02);
+			success_tip(reminder, mark_color, "&#xe614;", 0x02);
 		} else {
 			false_tip(reminder, mark_color, "密码必须包含大写、小写字母、数字；长度8-24", 0x02);
 		}
@@ -61,7 +61,7 @@ const used = ['马化腾', '雷军', '刘强东' ,'joker', 'Kevin', 'Durant', 'L
 		let mark_color = this.previousElementSibling.previousElementSibling;	
 		if (userPass.value) {
 			if (this.value == userPass.value) {
-				success_tip(reminder, mark_color, "OK", 0x04);
+				success_tip(reminder, mark_color, "&#xe614;", 0x04);
 			} else {
 				false_tip(reminder, mark_color, "两次密码不一致", 0x04);
 			}
@@ -75,7 +75,7 @@ const used = ['马化腾', '雷军', '刘强东' ,'joker', 'Kevin', 'Durant', 'L
 		if (/*this.value == "" && */!reg.test(this.value)) {
 			false_tip(reminder, mark_color, "请输入您的中文名字", 0x08);
 		} else {
-			success_tip(reminder, mark_color, "OK", 0x08);
+			success_tip(reminder, mark_color, "&#xe614;", 0x08);
 		}
 	}
 	
@@ -84,7 +84,7 @@ const used = ['马化腾', '雷军', '刘强东' ,'joker', 'Kevin', 'Durant', 'L
 		let mark_color = this.previousElementSibling.previousElementSibling;
 		let reg = /^1[3-5789]\d{9}$/
 		if (reg.test(this.value)) {
-			success_tip(reminder, mark_color, "OK", 0x10);
+			success_tip(reminder, mark_color, "&#xe614;", 0x10);
 		} else {
 			false_tip(reminder, mark_color, "请输入正确的手机号", 0x10);
 		}
@@ -95,7 +95,7 @@ const used = ['马化腾', '雷军', '刘强东' ,'joker', 'Kevin', 'Durant', 'L
 		let mark_color = this.previousElementSibling.previousElementSibling;
 		let reg = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/
 		if (reg.test(this.value)) {
-			success_tip(reminder, mark_color, "OK", 0x20);
+			success_tip(reminder, mark_color, "&#xe614;", 0x20);
 		} else {
 			false_tip(reminder, mark_color, "请输入正确的邮箱地址", 0x20);
 		}
